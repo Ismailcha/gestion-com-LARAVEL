@@ -13,7 +13,7 @@
                     @csrf
                     <input type="hidden" name="role" value="0">
                     <div class="col-md-6">
-                        <label for="nomDel" class="form-label">Nom Del:</label>
+                        <label for="nomDel" class="form-label">Nom complet:</label>
                         <input type="text" class="form-control" name="nomDel" id="nomDel" required>
                     </div>
                     <div class="col-md-6">
@@ -21,11 +21,11 @@
                         <input type="text" class="form-control" name="CIN" id="CIN" required>
                     </div>
                     <div class="col-md-6">
-                        <label for="CNSSDel" class="form-label">CNSS Del:</label>
+                        <label for="CNSSDel" class="form-label">CNSS:</label>
                         <input type="text" class="form-control" name="CNSSDel" id="CNSSDel" required>
                     </div>
                     <div class="col-md-6">
-                        <label for="AdresseDel" class="form-label">Adresse Del:</label>
+                        <label for="AdresseDel" class="form-label">Adresse:</label>
                         <input type="text" class="form-control" name="AdresseDel" id="AdresseDel" required>
                     </div>
                     <div class="col-md-6">
@@ -41,15 +41,15 @@
                         <input type="text" class="form-control" name="Poste" id="Poste" required>
                     </div>
                     <div class="col-md-6">
-                        <label for="DateEmb" class="form-label">Date Emb:</label>
+                        <label for="DateEmb" class="form-label">Date Embauche:</label>
                         <input type="date" class="form-control" name="DateEmb" id="DateEmb" required>
                     </div>
                     <div class="col-md-6">
-                        <label for="Qualié" class="form-label">Qualié:</label>
+                        <label for="Qualié" class="form-label">Qualité:</label>
                         <input type="text" class="form-control" name="Qualié" id="Qualié" required>
                     </div>
                     <div class="col-md-6">
-                        <label for="Affecaions" class="form-label">Affecaions:</label>
+                        <label for="Affecaions" class="form-label">Affectation:</label>
                         <input type="text" class="form-control" name="Affecaions" id="Affecaions" required>
                     </div>
                     <div class="col-md-12">

@@ -9,7 +9,7 @@ function trackUserLocation() {
         options
     );
 
-    // Retrieve the last recorded location from the database when the page loads
+    // get the last location
     $.ajax({
         url: "/commercial/commercial/last-location",
         method: "GET",
@@ -18,26 +18,26 @@ function trackUserLocation() {
                 lastLatitude = response.latitude;
                 lastLongitude = response.longitude;
             } else {
-                console.log("Invalid response received for last location.");
+                console.log("Invalid");
             }
         },
         error: function (error) {
-            console.log("Failed to retrieve last location:", error);
+            console.log("Error :", error);
         },
     });
 
     function successCallback(position) {
         const { latitude, longitude } = position.coords;
-        // Check if the current location is the same as the last recorded location
+        // check the localisation if its the same
         if (
             lastLatitude !== undefined &&
             lastLongitude !== undefined &&
             withinTolerance(latitude, lastLatitude) &&
             withinTolerance(longitude, lastLongitude)
         ) {
-            console.log("Same location, no data sent to the database.");
+            console.log("Meme localisation");
         } else {
-            // Save the current location to the database
+            // send data to database
             $.ajax({
                 url: "/commercial/commercial/location",
                 method: "POST",
@@ -51,7 +51,7 @@ function trackUserLocation() {
                     ),
                 },
                 success: function (response) {
-                    console.log("Location updated successfully.");
+                    console.log("Location modifier");
                     lastLatitude = latitude;
                     lastLongitude = longitude;
                 },
@@ -63,11 +63,11 @@ function trackUserLocation() {
     }
 
     function errorCallback(error) {
-        console.log("Failed to get user's location:", error.message);
+        console.log("Error :", error.message);
     }
 
     function withinTolerance(value1, value2) {
-        var tolerance = 0.01; // Adjust the tolerance value as needed
+        var tolerance = 0.0001; // tolerance de position
         return Math.abs(value1 - value2) < tolerance;
     }
 
@@ -78,9 +78,8 @@ function trackUserLocation() {
     };
 }
 
-// Trigger the function when the page loads
+// func trigger
 document.addEventListener("DOMContentLoaded", function () {
-    // Check if the user has role 0 before tracking their location
     if (userRole === "0") {
         trackUserLocation();
     }

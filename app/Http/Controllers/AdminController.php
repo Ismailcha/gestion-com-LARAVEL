@@ -51,7 +51,7 @@ class AdminController extends Controller
             $product = Product::find($mostProfitableProduct->product_id);
 
             return [
-                'productName' => $product->Reference, // Get the product name from the Product model
+                'productName' => $product->Reference,
                 'totalProfit' => $mostProfitableProduct->totalProfit,
             ];
         }
