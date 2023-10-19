@@ -58,7 +58,7 @@
                         <a href="">
                             <span class="icon">
                             </span>
-                            <span class="title">Gestion Commerciaux</span>
+                            <span class="title">Gestion délégués médicaux</span>
                         </a>
                     </li>
 
@@ -87,7 +87,7 @@
                             <span class="icon">
                                 <ion-icon name="bag-add-outline"></ion-icon>
                             </span>
-                            <span class="title">Ajouter un commercial</span>
+                            <span class="title">Ajouter un délégué</span>
                         </a>
                     </li>
 
@@ -104,7 +104,7 @@
                         <a href="">
                             <span class="icon">
                             </span>
-                            <span class="title">Gestion Commerciaux</span>
+                            <span class="title">Gestion délégués médicaux</span>
                         </a>
                     </li>
                     <li>

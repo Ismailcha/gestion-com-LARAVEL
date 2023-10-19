@@ -21,7 +21,7 @@
                         <td>{{ $bandeSortie->NumBS }}</td>
                         <td>{{ $bandeSortie->DateBS }}</td>
                         <td>{{ $bandeSortie->Date }}</td>
-                        <td>{{ $bandeSortie->TotalHT }} MAD</td>
+                        <td>{{ $bandeSortie->TotalHT }} DH</td>
                         <td>{{ $bandeSortie->Observations }}</td>
                         <td>
                             <ul>

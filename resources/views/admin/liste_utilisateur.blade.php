@@ -83,7 +83,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h3>
-                            Liste des Commerciaux
+                            Liste des délégués
                         </h3>
 
                         <livewire:commercial-table />

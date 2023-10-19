@@ -8,7 +8,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <h3 class="card-header text-center text-primary">Cree compte Admin</h3>
+                    <h3 class="card-header text-center text-primary">Créer compte Admin</h3>
 
                     <div class="card-body">
                         <form method="POST" action="{{ route('register') }}">

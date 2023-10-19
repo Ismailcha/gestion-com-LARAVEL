@@ -7,7 +7,7 @@
                 <div class="card">
                     <div>
                         <div class="numbers">{{ $commercials }}</div>
-                        <div class="cardName">Total commerciaux</div>
+                        <div class="cardName">Total délégués</div>
                     </div>
 
                     <div class="iconBx">
@@ -88,7 +88,7 @@
                         <div class="card-body">
                             <p><i class="text-primary">Nom Produit </i>: {{ $mostProfitableProduct['productName'] }}</p>
                             <p><i class="text-primary">Total vendu </i>:
-                                {{ number_format($mostProfitableProduct['totalProfit']) }} MAD</p>
+                                {{ number_format($mostProfitableProduct['totalProfit']) }} DH</p>
                         </div>
                     </div>
                 @endif

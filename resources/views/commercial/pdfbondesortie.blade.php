@@ -41,14 +41,14 @@
                     <tr>
                         <td>{{ $produit->Reference }}</td>
                         <td>{{ $produit->LibProd }}</td>
-                        <td>{{ number_format($produit->PrixHT) }} MAD</td>
+                        <td>{{ number_format($produit->PrixHT) }} DH</td>
                     </tr>
                 @endforeach
 
                 <tr>
                     <td colspan="2" class="text-right">THT</td>
                     <td>
-                        <p>{{ number_format($bonDeSortie->TotalHT) }} MAD</p>
+                        <p>{{ number_format($bonDeSortie->TotalHT) }} DH</p>
                     </td>
                 </tr>
                 <tr>
@@ -64,7 +64,7 @@
                             $totalAfterDiscount = $bonDeSortie->TotalHT - $bonDeSortie->TotalHT * 0.2;
                         @endphp
 
-                            {{ number_format($totalAfterDiscount) }} MAD
+                            {{ number_format($totalAfterDiscount) }} DH
                         </p>
                     </td>
                 </tr>

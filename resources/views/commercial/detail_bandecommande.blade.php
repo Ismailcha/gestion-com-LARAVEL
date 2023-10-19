@@ -26,7 +26,7 @@
                             </td>
                             <td>{{ $bonDeSortie->commercial->name }}</td>
                             <td>{{ $bonDeSortie->Date }}</td>
-                            <td>{{ number_format($bonDeSortie->TotalHT) }}MAD</td>
+                            <td>{{ number_format($bonDeSortie->TotalHT) }}DH</td>
                             <td>{{ $bonDeSortie->Observations }}</td>
 
                         </tr>
@@ -38,7 +38,7 @@
                         <li>
                             <i><u>Nom :</u></i> {{ $produit->Reference }} <br>
                             <i><u>Libellé :</u></i> {{ $produit->LibProd }}<br>
-                            <i><u>Prix/u :</u></i> {{ number_format($produit->PrixHT) }} MAD
+                            <i><u>Prix/u :</u></i> {{ number_format($produit->PrixHT) }} DH
                         </li><br>
                     @endforeach
                 </ol>
