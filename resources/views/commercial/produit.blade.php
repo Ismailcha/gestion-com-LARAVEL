@@ -27,13 +27,13 @@
 
                 <br /><br />
 
-                <label>PrixHT</label>
+                <label>Prix HT</label>
                 <input type="text"class="form-control" name="PrixHT" /><br /><br />
-                <label>PrixAchatHT</label>
+                <label>Prix Achat HT</label>
                 <input type="text"class="form-control" name="PrixAchatHT" /><br /><br />
-                <label>PPCTTC</label>
+                <label>Prix vente ht</label>
                 <input type="text"class="form-control" name="PPCTTC" /><br /><br />
-                <label>PPHTTC</label>
+                <label>Prix vente</label>
                 <input type="text"class="form-control" name="PPHTTC" /><br /><br />
                 <label>PGTTC</label>
                 <input type="text"class="form-control" name="PGTTC" /><br /><br />

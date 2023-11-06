@@ -134,7 +134,7 @@
 
                 var formattedTotalHT = totalHT.toLocaleString("fr-FR", {
                     style: "currency",
-                    currency: "DH"
+                    currency: "mad"
                 });
                 $("input[name='TotalHT']").val(formattedTotalHT);
             }

@@ -66,12 +66,12 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="PPCTTC" class="form-label">PPCTTC</label>
+                        <label for="PPCTTC" class="form-label">Prix vente ht</label>
                         <input type="number" name="PPCTTC" class="form-control" value="{{ $produit->PPCTTC }}">
                     </div>
 
                     <div class="mb-3">
-                        <label for="PPHTTC" class="form-label">PPHTTC</label>
+                        <label for="PPHTTC" class="form-label">prix vente</label>
                         <input type="number" name="PPHTTC" class="form-control" value="{{ $produit->PPHTTC }}">
                     </div>
 
